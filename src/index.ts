@@ -1,5 +1,8 @@
 import app from './app';
 import { config } from './config';
+import { connectDatabase } from "./config/database";
+
+connectDatabase();
 
 const server = app.listen(config.port, () => {
   console.log(`[server]: Server is running at http://localhost:${config.port}`);

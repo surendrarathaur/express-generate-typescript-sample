@@ -22,6 +22,7 @@ app.use(cors({
   origin: config.corsOrigin,
 }));
 app.use(express.json());
+
 app.use(express.urlencoded({ extended: true }));
 
 // API Base Routes
